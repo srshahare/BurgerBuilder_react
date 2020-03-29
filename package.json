@@ -1,5 +1,6 @@
 {
   "name": "burgerbuild",
+  "homepage": "http://Shashank358.github.io/BurgerBuilder_react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -65,7 +66,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -136,5 +139,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   }
 }
